@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "",
+      "type": "com.example.demoservice.AppProperties",
+      "sourceType": "com.example.demoservice.AppProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "city",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demoservice.AppProperties"
+    },
+    {
+      "name": "name",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demoservice.AppProperties"
+    }
+  ],
+  "hints": []
+}
