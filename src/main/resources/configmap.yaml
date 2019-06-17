@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: config-map-demo-service
 data:
-  city: pretoria
-  name: sonia 
+  city: johannesburg
+  name: mytili
