@@ -1,0 +1,27 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: deploy-demo-service
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: demo-service
+    spec:
+      containers:
+      - name: pod-demo-service
+        image: volivattamchn/k8sdemos
+        ports:
+        - containerPort: 8080
+        env:
+        - name: name
+          valueFrom:
+            configMapKeyRef:
+              name: config-map-demo-service
+              key: name
+        - name: city
+          valueFrom:
+            configMapKeyRef:
+              name: config-map-demo-service
+              key: city
