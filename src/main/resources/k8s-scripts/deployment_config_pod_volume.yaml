@@ -1,0 +1,24 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: deployment-config-pod-volume
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: pod-volume
+    spec:
+      containers:
+        - name: config-pod-volume
+          image: volivattamchn/k8sdemos
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: config-volume
+              mountPath: /etc/config
+      volumes:
+        - name: config-volume
+          configMap:
+            name: config-map-demo-service
+         
