@@ -2,7 +2,7 @@
 FROM openjdk:8-jdk-alpine
 
 # Add Maintainer Info
-LABEL maintainer="gsamartian@cheerful.com"
+LABEL maintainer="dexdeb246@gmail.com"
 
 # Add a volume pointing to /tmp
 VOLUME /tmp
